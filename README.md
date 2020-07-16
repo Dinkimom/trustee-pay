@@ -5,7 +5,7 @@ It's a special environment for apps and devices to confirm payment by the truste
 We're going to create a special system, that aims on giving the trustee full control on the payment confirmation.
 
 Here is the future feature list:
-1. contactless payment with confirmation
+1. Сontactless payment with confirmation
 
 2. Ban on certain categories
 
