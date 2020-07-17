@@ -7,4 +7,5 @@
 import ExampleServer from './ExampleServer';
 
 const exampleServer = new ExampleServer();
-exampleServer.start(3000);
+
+exampleServer.start(5000);

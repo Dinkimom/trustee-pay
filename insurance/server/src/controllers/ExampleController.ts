@@ -3,18 +3,20 @@
  *
  * created by Sean Maxwell Apr 14, 2019
  */
-
 import { Controller, Delete, Get, Post, Put } from '@overnightjs/core';
 import { Logger } from '@overnightjs/logger';
 import { Request, Response } from 'express';
+import { User } from './../models/Sample';
 
 @Controller('api')
 export class ExampleController {
     @Get(':msg')
     private getMessage(req: Request, res: Response) {
         Logger.Info(req.params.msg);
-        res.status(200).json({
-            message: req.params.msg,
+
+        User.find({}, function (err, users) {
+            if (err) return console.log(err);
+            res.send(users);
         });
     }
 
